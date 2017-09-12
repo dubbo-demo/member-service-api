@@ -1,8 +1,8 @@
 package com.way.member.member.service;
 
-
 import com.way.common.result.ServiceResult;
 import com.way.member.member.dto.MemberDto;
+import org.springframework.stereotype.Service;
 
 /**
  * @ClassName: MemberService

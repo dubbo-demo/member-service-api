@@ -6,13 +6,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference interface="com.way.member.MemberDubboDemoService" id="memberDubboDemoService"/>
+    <!-- 生成远程服务代理，可以和本地bean一样使用service -->
+    <dubbo:reference interface="com.way.member.member.service.MemberService" id="memberService"/>
 
-    <dubbo:reference interface="com.way.member.member.service.MemberService" id="MemberService"/>
+    <dubbo:reference interface="com.way.member.member.service.PasswordService" id="passwordService"/>
 
-    <dubbo:reference interface="com.way.member.member.service.PasswordService" id="PasswordService"/>
-
-    <dubbo:reference interface="com.way.member.member.service.RegistLogService" id="RegistLogService"/>
+    <dubbo:reference interface="com.way.member.member.service.RegistLogService" id="registLogService"/>
 
 </beans>
