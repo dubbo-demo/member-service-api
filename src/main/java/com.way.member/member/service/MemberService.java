@@ -4,13 +4,11 @@ package com.way.member.member.service;
 import com.way.common.result.ServiceResult;
 import com.way.member.member.dto.MemberDto;
 
-import java.util.List;
-
 /**
  * @ClassName: MemberService
  * @Description: 会员登录Service
- * @author 徐超
- * @date 2017年08月20日 20:16
+ * @author: xinpei.xu
+ * @date: 2017/08/20 21:31
  *
  */
 public interface MemberService {
@@ -57,13 +55,6 @@ public interface MemberService {
 	 * @return: void
 	 */
 	public void updatePassword(Long memberId, String newPassword);
-
-	/**
-	 * 是否上传
-	 * @param memberIdAndDeviceNo
-	 * @return
-	 */
-	ServiceResult<List<String>> whetherToUpload(String memberIdAndDeviceNo);
 
 	/**
 	 * 用户注册数据保存
