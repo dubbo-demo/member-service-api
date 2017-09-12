@@ -1,4 +1,4 @@
-package com.way.member.user.dto;
+package com.way.member.member.dto;
 
 import com.way.common.bean.BaseEntity;
 import lombok.Data;
