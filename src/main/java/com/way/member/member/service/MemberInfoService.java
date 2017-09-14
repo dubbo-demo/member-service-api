@@ -2,7 +2,6 @@ package com.way.member.member.service;
 
 import com.way.common.result.ServiceResult;
 import com.way.member.member.dto.MemberDto;
-import org.springframework.stereotype.Service;
 
 /**
  * @ClassName: MemberService
@@ -11,7 +10,7 @@ import org.springframework.stereotype.Service;
  * @date: 2017/08/20 21:31
  *
  */
-public interface MemberService {
+public interface MemberInfoService {
 
 	/**
 	 *
