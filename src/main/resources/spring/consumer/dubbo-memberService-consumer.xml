@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 生成远程服务代理，可以和本地bean一样使用service -->
+    <dubbo:reference interface="com.way.member.member.service.MemberInfoService" id="memberInfoService"/>
+
+    <dubbo:reference interface="com.way.member.member.service.PasswordService" id="passwordService"/>
+
+    <dubbo:reference interface="com.way.member.member.service.RegistLogService" id="registLogService"/>
+
+</beans>
