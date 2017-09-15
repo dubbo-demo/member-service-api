@@ -28,13 +28,6 @@ public interface MemberInfoService {
 	ServiceResult<MemberDto> loadMapByMobile(String mobile);
 
 	/**
-	 * @Title: selectIsOldMember
-	 * @Description: 根据手机号查询该手机号是否是老用户
-	 * @return: Map<String,Object>
-	 */
-	public ServiceResult<MemberDto> selectIsOldMember(String mobile);
-
-	/**
 	 * @Title: queryMemberInfo
 	 * @Description: 根据手机号查询会员信息
 	 * @return: ServiceResult<MemberDto>
@@ -63,10 +56,9 @@ public interface MemberInfoService {
 	public ServiceResult<MemberDto> memberRegist(MemberDto memberDto);
 
 	/**
-	 * 获取判断用户来源
-	 * @param memberId
-	 * @return
+	 * 根据手机号更新用户头像id
+	 * @param phoneNo
+	 * @param headPicId
 	 */
-	MemberDto queryMemberSourceByMemberId(Long memberId);
-
+	void updateHeadPicIdByPhoneNo(String phoneNo, String headPicId);
 }
