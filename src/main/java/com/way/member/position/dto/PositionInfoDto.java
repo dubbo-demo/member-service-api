@@ -18,11 +18,15 @@ public class PositionInfoDto extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
-    private Long id;
+    private Integer id;
 
     private String phoneNo;// 手机号
 
     private String longitude;// 经度
 
     private String latitude;// 纬度
+
+    private String headPic; // 头像地址
+
+    private String updateTime;// 更新时间
 }
