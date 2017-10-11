@@ -20,7 +20,7 @@ public interface PositionInfoService {
      * @param positionInfoDto
      * @param id
      */
-    void updatePosition(PositionInfoDto positionInfoDto, Integer id);
+    void updatePosition(PositionInfoDto positionInfoDto, Long id);
 
     /**
      * 根据手机号获取用户实时坐标
