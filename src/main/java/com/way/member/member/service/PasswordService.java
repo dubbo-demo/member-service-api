@@ -15,10 +15,10 @@ public interface PasswordService {
 	/**
      * 
      * @param memberDto
-     * @return 会员ID
-     * @Description:注册接口
+     * @return 会员Dto
+     * @Description:保存密码
      */
-	Long savePasswordInfo(MemberDto memberDto);
+	void savePasswordInfo(MemberDto memberDto);
 	
 	/**
 	 * @Title: queryCurPasswdById
@@ -26,11 +26,5 @@ public interface PasswordService {
 	 * @return: String 返回mobile
 	 */
 	public ServiceResult<String> queryCurPasswdById(Long memberId, String curPasssword);
-	
-	/**
-	 * @Title: queryPasswdById
-	 * @Description: 根据会员编号查询信息
-	 * @return: String 返回会员编号
-	 */
-	public ServiceResult<String> queryPasswdById(Long memberId);
+
 }

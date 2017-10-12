@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
+import java.util.Date;
+
 /**
  * @ClassName: MemberDto
  * @Description: 会员信息Dto
@@ -17,50 +19,46 @@ import lombok.ToString;
 public class MemberDto extends BaseEntity {
 	
 	private static final long serialVersionUID = 1L;
-	/** 会员手机号 */
-	private String phone;
-	/** 会员密码 */
-	private String password;
-	/** 员工编号 */
-	private String employeeId;
-	/** 设备号 */
-	private String deviceNo;
+
+	private String token;
 	/** 版本号 */
 	private String version;
-	/** 推广渠道来源 */
-	private String promotionSource;
-	/** 终端渠道 */
-	private String terminalChannel;
-	/** app应用渠道 */
-	private String appSource;
-	/** 经度 */
-	private String lng;
-	/** 纬度 */
-	private String lat;
+	/** 设备号 */
+	private String deviceNo;
 	/** 图片验证码 */
 	private String imgCode;
-	/** 发送短信验证码类型 */
-	private String type;
 	/** 短信验证码 */
 	private String verificationCode;
-	/** 老客户  线下老会员-1 */
+	/** 发送短信验证码类型 */
+	private String type;
+	/** 会员密码 */
+	private String password;
+	/** 客户手机号 */
+	private String phoneNo;
+	/** 客户姓名 */
+	private String nickName;
+	/** 昵称拼音 */
+	private String nickSpell;
+	/** 性别1男,2女 */
+	private String gender;
+	/** 会员类型 1:非会员,2:正式会员,3:试用期会员 */
 	private String memberType;
-	/** 会员编号 */
-	private Long memberId;
-	/** 登录IP */
-	private String sIp;
-	/** 城市 */
-	private String city;
-	/** token */
-	private String token;
-	/** 客户来源 0:线下 1:App*/
-	private int memberSource;
-	/** 用户头像 */
-	private String headPhoto;
-	/** 资料完善度 */
-	private String dataCompletValues;
-	/** 资料明细完成步骤 */
-	private String datadetailcompletvalues;
-	/** 身份证号 **/
-	private String idCarNo;
+	/** 是否开通增值服务1是2否 */
+	private String valueAddedService;
+	/** 年龄 */
+	private String age;
+	/** 头像ID */
+	private String headPicId;
+	/** 会员开始时间 */
+	private Date memberStartTime;
+	/** 会员结束时间 */
+	private Date memberEndTime;
+	/** 增值服务开始时间 */
+	private Date valueAddedServiceStartTime;
+	/** 增值服务结束时间 */
+	private Date valueAddedServiceEndTime;
+	/** 积分 */
+	private String integral;
+	/** 邀请码 */
+	private String invitationCode;
 }

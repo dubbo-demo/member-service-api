@@ -11,8 +11,6 @@
 
     <dubbo:reference interface="com.way.member.member.service.PasswordService" id="passwordService" check="false"/>
 
-    <dubbo:reference interface="com.way.member.member.service.RegistLogService" id="registLogService" check="false"/>
-
     <dubbo:reference interface="com.way.member.position.service.PositionInfoService" id="positionInfoService" check="false"/>
 
 </beans>
