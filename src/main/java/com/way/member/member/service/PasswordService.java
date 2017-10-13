@@ -21,10 +21,10 @@ public interface PasswordService {
 	void savePasswordInfo(MemberDto memberDto);
 	
 	/**
-	 * @Title: queryCurPasswdById
+	 * @Title: checkCurPassword
 	 * @Description: 查询当前登录密码是否正确
 	 * @return: String 返回mobile
 	 */
-	public ServiceResult<String> queryCurPasswdById(Long memberId, String curPasssword);
+	public ServiceResult<String> checkCurPassword(String phoneNo, String curPasssword);
 
 }

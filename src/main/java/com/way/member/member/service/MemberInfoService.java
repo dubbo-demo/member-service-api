@@ -32,7 +32,7 @@ public interface MemberInfoService {
 	 * @Description: 根据手机号查询会员信息
 	 * @return: ServiceResult<MemberDto>
 	 */
-	public ServiceResult<MemberDto> queryMemberInfo(String mobile);
+	public ServiceResult<MemberDto> queryMemberInfo(String phoneNo);
 
 
 	/**
