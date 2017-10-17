@@ -48,7 +48,7 @@ public class MemberDto extends BaseEntity {
 	/** 年龄 */
 	private String age;
 	/** 头像ID */
-	private String headPicId;
+	private String headPic;
 	/** 会员开始时间 */
 	private Date memberStartTime;
 	/** 会员结束时间 */
