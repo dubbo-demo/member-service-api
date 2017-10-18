@@ -65,4 +65,7 @@ public class FriendsInfoDto extends BaseEntity {
 
     /** 头像ID */
     private String headPic;
+
+    /** 首字母 */
+    private String remarkFirstLetter;
 }

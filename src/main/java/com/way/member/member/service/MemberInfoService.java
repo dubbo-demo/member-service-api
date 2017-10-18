@@ -55,4 +55,11 @@ public interface MemberInfoService {
 	 * @param headPicId
 	 */
 	void updateHeadPicIdByPhoneNo(String phoneNo, String headPicId);
+
+	/**
+	 * 根据手机号搜索用户
+	 * @param phoneNo
+	 * @return
+	 */
+	ServiceResult<MemberDto> searchUserByPhoneNo(String phoneNo);
 }

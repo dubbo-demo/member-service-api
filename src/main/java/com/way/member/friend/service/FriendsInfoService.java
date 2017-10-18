@@ -52,4 +52,12 @@ public interface FriendsInfoService {
      * @return
      */
     ServiceResult<FriendsInfoDto> getFriendInfo(String phoneNo, String friendPhoneNo);
+
+    /**
+     * 查询好友列表
+     * @param phoneNo
+     * @return
+     */
+    List<FriendsInfoDto> getFriendList(String phoneNo);
+
 }
