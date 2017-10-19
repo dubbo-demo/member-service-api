@@ -15,4 +15,6 @@
 
     <dubbo:reference interface="com.way.member.friend.service.FriendsInfoService" id="friendsInfoService" check="false"/>
 
+    <dubbo:reference interface="com.way.member.friend.service.ApplyFriendInfoService" id="applyFriendInfoService" check="false"/>
+
 </beans>
