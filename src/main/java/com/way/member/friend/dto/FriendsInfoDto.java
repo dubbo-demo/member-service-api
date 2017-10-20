@@ -37,19 +37,19 @@ public class FriendsInfoDto extends BaseEntity {
     private Integer isAccreditVisible;
 
     /** 授权开始时间 */
-    private Date accreditStartTime;
+    private String accreditStartTime;
 
     /** 授权结束时间 */
-    private Date accreditEndTime;
+    private String accreditEndTime;
 
     /** 是否被授权可见 1:是,2:否 */
     private Integer isAuthorizedVisible;
 
     /** 被授权开始时间 */
-    private Date authorizedAccreditStartTime;
+    private String authorizedAccreditStartTime;
 
     /** 被授权结束时间 */
-    private Date authorizedAccreditEndTime;
+    private String authorizedAccreditEndTime;
 
     /** 组id */
     private String groupId;

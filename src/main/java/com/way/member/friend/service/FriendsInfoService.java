@@ -60,4 +60,24 @@ public interface FriendsInfoService {
      */
     List<FriendsInfoDto> getFriendList(String phoneNo);
 
+    /**
+     * 修改好友信息
+     * @param phoneNo
+     * @param dto
+     */
+    void modifyFriendInfo(String phoneNo, FriendsInfoDto dto);
+
+    /**
+     * 修改被授权人好友信息
+     * @param phoneNo
+     * @param dto
+     */
+    void modifyAuthorizedFriendInfo(String phoneNo, FriendsInfoDto dto);
+
+    /**
+     * 删除好友
+     * @param phoneNo
+     * @param friendPhoneNo
+     */
+    void deleteFriend(String phoneNo, String friendPhoneNo);
 }
