@@ -80,4 +80,18 @@ public interface FriendsInfoService {
      * @param friendPhoneNo
      */
     void deleteFriend(String phoneNo, String friendPhoneNo);
+
+    /**
+     * 根据组ID获取好友信息
+     * @param groupId
+     * @return
+     */
+    List<FriendsInfoDto> getFriendListByGroupId(String groupId);
+
+    /**
+     * 将好友组信息清空
+     * @param phoneNo
+     * @param groupId
+     */
+    void updateFriendsGroupInfo(String phoneNo, String groupId);
 }
