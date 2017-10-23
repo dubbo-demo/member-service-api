@@ -38,4 +38,5 @@ public interface GroupInfoService {
      * @param groupId
      */
     void deleteGroupInfo(String groupId);
+
 }

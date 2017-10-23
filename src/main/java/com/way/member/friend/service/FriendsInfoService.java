@@ -2,6 +2,7 @@ package com.way.member.friend.service;
 
 import com.way.common.result.ServiceResult;
 import com.way.member.friend.dto.FriendsInfoDto;
+import com.way.member.friend.dto.GroupInfoDto;
 
 import java.util.List;
 
@@ -94,4 +95,11 @@ public interface FriendsInfoService {
      * @param groupId
      */
     void updateFriendsGroupInfo(String phoneNo, String groupId);
+
+    /**
+     * 将好友添加到分组
+     * @param friendPhoneNo
+     * @param groupInfoDto
+     */
+    void moveFriendToGroup(String friendPhoneNo, GroupInfoDto groupInfoDto);
 }
