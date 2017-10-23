@@ -62,4 +62,18 @@ public interface MemberInfoService {
 	 * @return
 	 */
 	ServiceResult<MemberDto> searchUserByPhoneNo(String phoneNo);
+
+	/**
+	 * 查看个人信息
+	 * @param phoneNo
+	 * @return
+	 */
+	ServiceResult<MemberDto> getMemberInfo(String phoneNo);
+
+	/**
+	 * 修改个人信息
+	 * @param dto
+	 * @return
+	 */
+	ServiceResult<Object> modifyMemberInfo(MemberDto dto);
 }
