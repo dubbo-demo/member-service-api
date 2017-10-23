@@ -102,4 +102,12 @@ public interface FriendsInfoService {
      * @param groupInfoDto
      */
     void moveFriendToGroup(String friendPhoneNo, GroupInfoDto groupInfoDto);
+
+    /**
+     * 将好友从分组中移除
+     * @param phoneNo
+     * @param friendPhoneNo
+     * @return
+     */
+    ServiceResult<Object> removeFriendFromGroup(String phoneNo, String friendPhoneNo);
 }
