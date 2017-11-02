@@ -34,7 +34,8 @@ public interface ApplyFriendInfoService {
      * @param phoneNo
      * @param friendPhoneNo
      * @param isApprove
+     * @param applicationId
      * @return
      */
-    ServiceResult<Object> agreeToAddFriend(String phoneNo, String friendPhoneNo, String isApprove);
+    ServiceResult<Object> agreeToAddFriend(String phoneNo, String friendPhoneNo, String isApprove, String applicationId);
 }
