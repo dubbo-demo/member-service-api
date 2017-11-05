@@ -42,6 +42,9 @@ public class FriendsInfoDto extends BaseEntity {
     /** 授权结束时间 */
     private String accreditEndTime;
 
+    /** 授权日期 */
+    private String accreditWeeks;
+
     /** 是否被授权可见 1:是,2:否 */
     private Integer isAuthorizedVisible;
 
@@ -50,6 +53,9 @@ public class FriendsInfoDto extends BaseEntity {
 
     /** 被授权结束时间 */
     private String authorizedAccreditEndTime;
+
+    /** 被授权日期 */
+    private String authorizedWeeks;
 
     /** 组id */
     private String groupId;

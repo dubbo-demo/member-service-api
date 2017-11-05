@@ -110,4 +110,10 @@ public interface FriendsInfoService {
      * @return
      */
     ServiceResult<Object> removeFriendFromGroup(String phoneNo, String friendPhoneNo);
+
+    /**
+     * 添加好友
+     * @param dto
+     */
+    ServiceResult<Object> addFriendInfo(FriendsInfoDto dto);
 }
