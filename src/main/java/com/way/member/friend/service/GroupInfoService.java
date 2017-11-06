@@ -3,6 +3,8 @@ package com.way.member.friend.service;
 import com.way.common.result.ServiceResult;
 import com.way.member.friend.dto.GroupInfoDto;
 
+import java.util.List;
+
 /**
  * @ClassName: GroupInfoService
  * @Description: 组信息Service
@@ -39,4 +41,10 @@ public interface GroupInfoService {
      */
     void deleteGroupInfo(String groupId);
 
+    /**
+     * 查询组信息
+     * @param phoneNo
+     * @return
+     */
+    List<GroupInfoDto> getGroupInfoListByPhoneNo(String phoneNo);
 }
