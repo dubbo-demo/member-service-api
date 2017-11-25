@@ -39,6 +39,12 @@ public class GroupInfoDto extends BaseEntity {
     /** 是否授权可见 1:是,2:否 */
     private Integer isAccreditVisible;
 
+    /** 授权日期 */
+    private String accreditWeeks;
+
+    /** 是否退出前查看 1:是,2:否 */
+    private Integer isCheckBeforeExit;
+
     /** 组好友信息 */
     List<FriendsInfoDto> friends;
 }

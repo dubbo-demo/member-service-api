@@ -41,10 +41,10 @@ public interface FriendsInfoService {
     /**
      * 取消查看好友实时坐标
      * @param phoneNo
-     * @param friendPhoneNo
+     * @param friendPhoneNos
      * @param state
      */
-    void updateIsCheckBeforeExitByFriendPhoneNo(String phoneNo, String friendPhoneNo, Integer state);
+    void updateIsCheckBeforeExitByFriendPhoneNos(String phoneNo, List<String> friendPhoneNos, Integer state);
 
     /**
      * 查询好友信息
@@ -116,4 +116,12 @@ public interface FriendsInfoService {
      * @param dto
      */
     ServiceResult<Object> addFriendInfo(FriendsInfoDto dto);
+
+    /**
+     * 查询是否被好友授权可见
+     * @param phoneNo
+     * @param friendPhoneNo
+     * @return
+     */
+    FriendsInfoDto checkIsAuthorizedVisible(String phoneNo, String friendPhoneNo);
 }

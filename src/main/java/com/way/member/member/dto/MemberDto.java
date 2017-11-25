@@ -61,4 +61,7 @@ public class MemberDto extends BaseEntity {
 	private String rewardScore;
 	/** 邀请码 */
 	private String invitationCode;
+	/** 是否为好友*/
+	private String isFriend;
+
 }

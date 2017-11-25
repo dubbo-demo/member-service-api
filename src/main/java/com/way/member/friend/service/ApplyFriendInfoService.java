@@ -15,7 +15,7 @@ import java.util.List;
 public interface ApplyFriendInfoService {
 
     /**
-     * 增加被申请记录
+     * 申请添加好友
      * @param phoneNo
      * @param friendPhoneNo
      * @param applyInfo

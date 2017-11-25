@@ -1,9 +1,9 @@
 package com.way.member.position.dto;
 
-import com.way.common.bean.BaseEntity;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.ToString;
+
+import java.io.Serializable;
 
 /**
  * 功能描述：定位信息Dto
@@ -13,10 +13,11 @@ import lombok.ToString;
  */
 @Data
 @ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true)
-public class PositionInfoDto extends BaseEntity {
+public class PositionInfoDto implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
+    private Long id;
 
     private String phoneNo;// 手机号
 
@@ -26,5 +27,7 @@ public class PositionInfoDto extends BaseEntity {
 
     private String headPic; // 头像地址
 
-    private String updateTime;// 更新时间
+    private String modifyTime;// 修改时间
+
+    private String isAccreditVisible;// 是否授权可见 1:是,2:否
 }
