@@ -41,10 +41,10 @@ public interface FriendsInfoService {
     /**
      * 取消查看好友实时坐标
      * @param phoneNo
-     * @param friendPhoneNos
+     * @param friendPhoneNoList
      * @param state
      */
-    void updateIsCheckBeforeExitByFriendPhoneNos(String phoneNo, List<String> friendPhoneNos, Integer state);
+    void updateIsCheckBeforeExitByFriendPhoneNos(String phoneNo, List<String> friendPhoneNoList, Integer state);
 
     /**
      * 查询好友信息
