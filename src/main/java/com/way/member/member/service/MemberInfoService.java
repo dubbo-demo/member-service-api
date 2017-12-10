@@ -3,6 +3,8 @@ package com.way.member.member.service;
 import com.way.common.result.ServiceResult;
 import com.way.member.member.dto.MemberDto;
 
+import java.util.Date;
+
 /**
  * @ClassName: MemberService
  * @Description: 会员登录Service
@@ -76,4 +78,32 @@ public interface MemberInfoService {
 	 * @return
 	 */
 	ServiceResult<Object> modifyMemberInfo(MemberDto dto);
+
+	/**
+	 * 积分购买会员
+	 * @param phoneNo
+	 * @param rewardScore
+	 * @param startTime
+	 * @param endTime
+	 * @param name
+	 */
+	void buyMemberByRewardScore(String phoneNo, Integer rewardScore, Date startTime, Date endTime, String name);
+
+	/**
+	 * 积分购买增值服务
+	 * @param phoneNo
+	 * @param rewardScore
+	 * @param startTime
+	 * @param endTime
+	 * @param name
+	 */
+	void buyValueAddedServiceByRewardScore(String phoneNo, Integer rewardScore, Date startTime, Date endTime, String name);
+
+	/**
+	 * 积分转增
+	 * @param phoneNo
+	 * @param rewardScore
+	 * @param friendPhoneNo
+	 */
+	void transferRewardScoreToFriend(String phoneNo, Integer rewardScore, String friendPhoneNo);
 }
