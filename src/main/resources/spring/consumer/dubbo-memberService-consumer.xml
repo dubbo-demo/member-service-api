@@ -20,4 +20,7 @@
     <dubbo:reference interface="com.way.member.friend.service.GroupInfoService" id="groupInfoService" check="false"/>
 
     <dubbo:reference interface="com.way.member.rewardScore.service.RewardScoreService" id="rewardScoreService" check="false"/>
+
+    <dubbo:reference interface="com.way.member.withdrawal.service.WithdrawalInfoService" id="withdrawalInfoService" check="false"/>
+
 </beans>

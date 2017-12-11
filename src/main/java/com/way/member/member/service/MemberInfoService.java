@@ -1,6 +1,7 @@
 package com.way.member.member.service;
 
 import com.way.common.result.ServiceResult;
+import com.way.member.withdrawal.dto.WithdrawalInfoDto;
 import com.way.member.member.dto.MemberDto;
 
 import java.util.Date;
@@ -87,7 +88,7 @@ public interface MemberInfoService {
 	 * @param endTime
 	 * @param name
 	 */
-	void buyMemberByRewardScore(String phoneNo, Integer rewardScore, Date startTime, Date endTime, String name);
+	void buyMemberByRewardScore(String phoneNo, Double rewardScore, Date startTime, Date endTime, String name);
 
 	/**
 	 * 积分购买增值服务
@@ -97,7 +98,7 @@ public interface MemberInfoService {
 	 * @param endTime
 	 * @param name
 	 */
-	void buyValueAddedServiceByRewardScore(String phoneNo, Integer rewardScore, Date startTime, Date endTime, String name);
+	void buyValueAddedServiceByRewardScore(String phoneNo, Double rewardScore, Date startTime, Date endTime, String name);
 
 	/**
 	 * 积分转增
@@ -105,5 +106,11 @@ public interface MemberInfoService {
 	 * @param rewardScore
 	 * @param friendPhoneNo
 	 */
-	void transferRewardScoreToFriend(String phoneNo, Integer rewardScore, String friendPhoneNo);
+	void transferRewardScoreToFriend(String phoneNo, Double rewardScore, String friendPhoneNo);
+
+	/**
+	 * 积分提现
+	 * @param withdrawalInfoDto
+	 */
+	void withdrawalRewardScore(WithdrawalInfoDto withdrawalInfoDto);
 }
