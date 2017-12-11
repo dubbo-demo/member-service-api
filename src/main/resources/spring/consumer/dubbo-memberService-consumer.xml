@@ -23,4 +23,6 @@
 
     <dubbo:reference interface="com.way.member.withdrawal.service.WithdrawalInfoService" id="withdrawalInfoService" check="false"/>
 
+    <dubbo:reference interface="com.way.member.recharge.service.RechargeInfoService" id="rechargeInfoService" check="false"/>
+
 </beans>
