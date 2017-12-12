@@ -97,8 +97,9 @@ public interface MemberInfoService {
 	 * @param startTime
 	 * @param endTime
 	 * @param name
+	 * @param type
 	 */
-	void buyValueAddedServiceByRewardScore(String phoneNo, Double rewardScore, Date startTime, Date endTime, String name);
+	void buyValueAddedServiceByRewardScore(String phoneNo, Double rewardScore, Date startTime, Date endTime, String name, String type);
 
 	/**
 	 * 积分转增
