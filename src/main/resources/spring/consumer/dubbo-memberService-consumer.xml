@@ -25,4 +25,6 @@
 
     <dubbo:reference interface="com.way.member.recharge.service.RechargeInfoService" id="rechargeInfoService" check="false"/>
 
+    <dubbo:reference interface="com.way.member.valueAdded.service.MemberValueAddedInfoService" id="memberValueAddedInfoService" check="false"/>
+
 </beans>
