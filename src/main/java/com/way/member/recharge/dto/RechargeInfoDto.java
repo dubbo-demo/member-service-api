@@ -14,7 +14,7 @@ public class RechargeInfoDto extends BaseEntity {
 
     private String phoneNo;// 手机号
 
-    private String type;// 增值服务类型:1:购买会员,2:轨迹回放,3:电子围栏
+    private String type;// 增值服务类型:0:购买会员,1:轨迹回放,2:电子围栏
 
     private Double amount;// 金额
 
