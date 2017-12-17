@@ -25,4 +25,10 @@ public interface RechargeInfoService {
      * @return
      */
     List<RechargeInfoDto> getRechargeInfoList(String phoneNo, int pageNumber);
+
+    /**
+     * 更新充值记录表
+     * @param dto
+     */
+    void addRechargeInfoDto(RechargeInfoDto dto);
 }

@@ -14,4 +14,11 @@ public interface MemberOrderInfoService {
      * @param memberOrderInfoDto
      */
     void saveMemberOrderInfo(MemberOrderInfoDto memberOrderInfoDto);
+
+    /**
+     * 根据内部交易号查出交易信息
+     * @param out_trade_no
+     * @return
+     */
+    MemberOrderInfoDto getOrderInfo(String out_trade_no);
 }

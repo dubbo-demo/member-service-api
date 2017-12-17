@@ -1,11 +1,12 @@
 package com.way.member.member.service;
 
 import com.way.common.result.ServiceResult;
+import com.way.member.member.dto.MemberDto;
 import com.way.member.valueAdded.dto.MemberValueAddedInfoDto;
 import com.way.member.withdrawal.dto.WithdrawalInfoDto;
-import com.way.member.member.dto.MemberDto;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @ClassName: MemberService
@@ -118,4 +119,24 @@ public interface MemberInfoService {
 	 * @param withdrawalInfoDto
 	 */
 	void withdrawalRewardScore(WithdrawalInfoDto withdrawalInfoDto);
+
+	/**
+	 * 获取积分提现记录
+	 * @param phoneNo
+	 * @return
+	 */
+	List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String phoneNo);
+
+	/**
+	 * 充值购买会员/增值服务
+	 * @param phoneNo
+	 * @param type
+	 * @param invitationCode
+	 * @param amount
+	 * @param startTime
+	 * @param endTime
+	 * @param name
+	 */
+	void buyServiceByRecharge(String phoneNo,String type,  String invitationCode, Double amount, Date startTime, Date endTime, String name);
+
 }

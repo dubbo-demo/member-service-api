@@ -19,4 +19,6 @@ public class RechargeInfoDto extends BaseEntity {
     private Double amount;// 金额
 
     private Integer status;// 状态 0:待处理,1:成功,2:失败
+
+    private String orderNumber;
 }
