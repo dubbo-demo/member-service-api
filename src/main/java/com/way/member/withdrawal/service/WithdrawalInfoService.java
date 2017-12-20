@@ -18,9 +18,17 @@ public interface WithdrawalInfoService {
     void withdrawalRewardScore(WithdrawalInfoDto withdrawalInfoDto);
 
     /**
-     * 获取积分提现记录
+     * 查询总页数
      * @param phoneNo
      * @return
      */
-    List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String phoneNo);
+    Integer getWithdrawalRewardScoreCount(String phoneNo);
+
+    /**
+     * 获取积分提现记录
+     * @param phoneNo
+     * @param pageNumber
+     * @return
+     */
+    List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String phoneNo, int pageNumber);
 }

@@ -121,11 +121,19 @@ public interface MemberInfoService {
 	void withdrawalRewardScore(WithdrawalInfoDto withdrawalInfoDto);
 
 	/**
-	 * 获取积分提现记录
+	 * 查询总页数
 	 * @param phoneNo
 	 * @return
 	 */
-	List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String phoneNo);
+	Integer getWithdrawalRewardScoreCount(String phoneNo);
+
+	/**
+	 * 获取积分提现记录
+	 * @param phoneNo
+	 * @param pageNumber
+	 * @return
+	 */
+	List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String phoneNo, int pageNumber);
 
 	/**
 	 * 充值购买会员/增值服务
@@ -138,5 +146,4 @@ public interface MemberInfoService {
 	 * @param name
 	 */
 	void buyServiceByRecharge(String phoneNo,String type,  String invitationCode, Double amount, Date startTime, Date endTime, String name);
-
 }
