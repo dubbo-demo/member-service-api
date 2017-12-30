@@ -75,6 +75,9 @@ public class FriendsInfoDto extends BaseEntity {
     /** 首字母 */
     private String remarkFirstLetter;
 
+    /** 备注名拼音 */
+    private String friendRemarkNameSpell;
+
     /** 是否同意，0：申请中、1：是、2：否 */
     private String isApprove;
 }

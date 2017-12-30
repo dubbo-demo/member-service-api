@@ -124,4 +124,13 @@ public interface FriendsInfoService {
      * @return
      */
     FriendsInfoDto checkIsAuthorizedVisible(String phoneNo, String friendPhoneNo);
+
+    /**
+     * 设置好友为退出前可见
+     * @param phoneNo
+     * @param setVisibleFriendsList
+     * @param setInvisibleFriendsList
+     */
+    void setFriendsVisibleBeforeExiting(String phoneNo, List<String> setVisibleFriendsList, List<String> setInvisibleFriendsList);
+
 }
