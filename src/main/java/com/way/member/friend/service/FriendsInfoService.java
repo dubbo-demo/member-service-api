@@ -98,10 +98,10 @@ public interface FriendsInfoService {
 
     /**
      * 将好友添加到分组
-     * @param friendPhoneNo
+     * @param friendPhoneNos
      * @param groupInfoDto
      */
-    void moveFriendToGroup(String friendPhoneNo, GroupInfoDto groupInfoDto);
+    void moveFriendToGroup(String friendPhoneNos, GroupInfoDto groupInfoDto);
 
     /**
      * 将好友从分组中移除
@@ -128,9 +128,9 @@ public interface FriendsInfoService {
     /**
      * 设置好友为退出前可见
      * @param phoneNo
-     * @param setVisibleFriendsList
      * @param setInvisibleFriendsList
+     * @param setVisibleFriendsList
      */
-    void setFriendsVisibleBeforeExiting(String phoneNo, List<String> setVisibleFriendsList, List<String> setInvisibleFriendsList);
+    void setFriendsVisibleBeforeExiting(String phoneNo, List<String> setInvisibleFriendsList, List<String> setVisibleFriendsList);
 
 }

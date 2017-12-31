@@ -20,7 +20,7 @@ public class RewardScoreDto extends BaseEntity {
 
     private String phoneNo; // 手机号
 
-    private Integer rewardScoreType;// 积分类型:1:购买会员,2:推荐奖励,3:提现,4:转增
+    private Integer rewardScoreType;// 积分类型:1:购买会员,2:推荐奖励,3:提现,4:转增,5:获赠
 
     private String detailInfo; // 积分使用/获得详情
 
