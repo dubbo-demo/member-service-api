@@ -85,18 +85,18 @@ public interface MemberInfoService {
 	/**
 	 * 积分购买会员
 	 * @param phoneNo
-	 * @param invitationCode
+	 * @param memberDto
 	 * @param rewardScore
 	 * @param startTime
 	 * @param endTime
 	 * @param name
 	 */
-	void buyMemberByRewardScore(String phoneNo, String invitationCode, Double rewardScore, Date startTime, Date endTime, String name);
+	void buyMemberByRewardScore(String phoneNo, MemberDto memberDto, Double rewardScore, Date startTime, Date endTime, String name);
 
 	/**
 	 * 积分购买增值服务
 	 * @param phoneNo
-	 * @param invitationCode
+	 * @param memberDto
 	 * @param rewardScore
 	 * @param startTime
 	 * @param endTime
@@ -104,7 +104,7 @@ public interface MemberInfoService {
 	 * @param type
 	 * @param memberValueAddedInfoDto
 	 */
-	void buyValueAddedServiceByRewardScore(String phoneNo, String invitationCode, Double rewardScore, Date startTime, Date endTime, String name, String type, MemberValueAddedInfoDto memberValueAddedInfoDto);
+	void buyValueAddedServiceByRewardScore(String phoneNo, MemberDto memberDto, Double rewardScore, Date startTime, Date endTime, String name, String type, MemberValueAddedInfoDto memberValueAddedInfoDto);
 
 	/**
 	 * 积分转增
@@ -139,11 +139,11 @@ public interface MemberInfoService {
 	 * 充值购买会员/增值服务
 	 * @param phoneNo
 	 * @param type
-	 * @param invitationCode
+	 * @param memberDto
 	 * @param amount
 	 * @param startTime
 	 * @param endTime
 	 * @param name
 	 */
-	void buyServiceByRecharge(String phoneNo,String type,  String invitationCode, Double amount, Date startTime, Date endTime, String name);
+	void buyServiceByRecharge(String phoneNo, String type, MemberDto memberDto, Double amount, Date startTime, Date endTime, String name);
 }
