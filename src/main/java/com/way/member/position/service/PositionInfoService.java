@@ -16,8 +16,9 @@ public interface PositionInfoService {
     /**
      * 上传坐标
      * @param positionInfoDto
+     * @param flag
      */
-    void savePosition(PositionInfoDto positionInfoDto);
+    void savePosition(PositionInfoDto positionInfoDto, String flag);
 
     /**
      * 更新用户坐标
