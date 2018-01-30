@@ -25,6 +25,6 @@ public interface PasswordService {
 	 * @Description: 查询当前登录密码是否正确
 	 * @return: String 返回mobile
 	 */
-	public ServiceResult<String> checkCurPassword(String phoneNo, String curPasssword);
+	public ServiceResult<String> checkCurPassword(String invitationCode, String curPasssword);
 
 }

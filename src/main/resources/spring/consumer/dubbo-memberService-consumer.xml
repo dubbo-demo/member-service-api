@@ -29,4 +29,6 @@
 
     <dubbo:reference interface="com.way.member.order.service.MemberOrderInfoService" id="memberOrderInfoService" check="false"/>
 
+    <dubbo:reference interface="com.way.member.member.service.InviteRelationshipInfoService" id="inviteRelationshipInfoService" check="false"/>
+
 </beans>

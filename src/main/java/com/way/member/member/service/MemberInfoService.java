@@ -50,9 +50,10 @@ public interface MemberInfoService {
 	/**
 	 * 用户注册数据保存
 	 * @param memberDto
+	 * @param invitationCode
 	 * @return
 	 */
-	public void memberRegist(MemberDto memberDto);
+	public void memberRegist(MemberDto memberDto, String invitationCode);
 
 	/**
 	 * 根据手机号更新用户头像id
@@ -146,4 +147,11 @@ public interface MemberInfoService {
 	 * @param name
 	 */
 	void buyServiceByRecharge(String phoneNo, String type, MemberDto memberDto, Double amount, Date startTime, Date endTime, String name);
+
+	/**
+	 * 根据邀请码查邀请人信息
+	 * @param invitationCode
+	 * @return
+	 */
+	ServiceResult<MemberDto> loadMapByInvitationCode(String invitationCode);
 }

@@ -43,9 +43,9 @@ public class MemberDto extends BaseEntity {
 	private String gender;
 	/** 会员类型 1:非会员,2:正式会员,3:试用期会员 */
 	private String memberType;
-	/** 是否开通轨迹回放服务1是2否 */
+	/** 是否开通轨迹回放服务1是,2否,3试用 */
 	private String trajectoryService;
-	/** 是否开通电子围栏服务1是2否 */
+	/** 是否开通电子围栏服务1是,2否,3试用 */
 	private String fenceService;
 	/** 年龄 */
 	private String age;
