@@ -61,5 +61,9 @@ public class MemberDto extends BaseEntity {
 	private String invitationCode;
 	/** 是否为好友*/
 	private String isFriend;
+	/** 下级数 */
+	private Integer nextLevelCount;
+	/** 下下级数 */
+	private Integer underNextLevelCount;
 
 }

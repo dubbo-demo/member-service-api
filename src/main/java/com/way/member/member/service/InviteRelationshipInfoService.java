@@ -23,4 +23,18 @@ public interface InviteRelationshipInfoService {
      * @param inviteRelationshipInfoDto
      */
     void addInviteRelationshipInfo(InviteRelationshipInfoDto inviteRelationshipInfoDto);
+
+    /**
+     * 查询用户下级用户数
+     * @param invitationCode
+     * @return
+     */
+    Integer getNextLevelCount(String invitationCode);
+
+    /**
+     * 查询用户下下级用户数
+     * @param invitationCode
+     * @return
+     */
+    Integer getUnderNextLevelCount(String invitationCode);
 }
