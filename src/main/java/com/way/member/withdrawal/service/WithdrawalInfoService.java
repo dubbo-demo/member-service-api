@@ -19,16 +19,16 @@ public interface WithdrawalInfoService {
 
     /**
      * 查询总页数
-     * @param phoneNo
+     * @param invitationCode
      * @return
      */
-    Integer getWithdrawalRewardScoreCount(String phoneNo);
+    Integer getWithdrawalRewardScoreCount(String invitationCode);
 
     /**
      * 获取积分提现记录
-     * @param phoneNo
+     * @param invitationCode
      * @param pageNumber
      * @return
      */
-    List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String phoneNo, int pageNumber);
+    List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String invitationCode, int pageNumber);
 }

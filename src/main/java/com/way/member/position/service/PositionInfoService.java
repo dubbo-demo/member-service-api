@@ -34,7 +34,7 @@ public interface PositionInfoService {
      * @param modifyTime
      * @return
      */
-    ServiceResult<PositionInfoDto> getRealtimePositionByPhoneNo(String phoneNo, String modifyTime);
+    ServiceResult<PositionInfoDto> getRealTimePositionByPhoneNo(String phoneNo, String modifyTime);
 
     /**
      * 查询用户历史轨迹坐标

@@ -47,4 +47,7 @@ public class GroupInfoDto extends BaseEntity {
 
     /** 组好友信息 */
     List<FriendsInfoDto> friends;
+
+    /** 邀请码 */
+    private String invitationCode;
 }

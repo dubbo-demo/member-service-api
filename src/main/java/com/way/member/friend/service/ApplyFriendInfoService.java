@@ -16,18 +16,18 @@ public interface ApplyFriendInfoService {
 
     /**
      * 申请添加好友
-     * @param phoneNo
-     * @param friendPhoneNo
+     * @param invitationCode
+     * @param friendInvitationCode
      * @param applyInfo
      */
-    void applyForAddFriend(String phoneNo, String friendPhoneNo, String applyInfo);
+    void applyForAddFriend(String invitationCode, String friendInvitationCode, String applyInfo);
 
     /**
      * 获取被申请好友记录
-     * @param phoneNo
+     * @param invitationCode
      * @return
      */
-    List<FriendsInfoDto> getApplicationRecordOfFriend(String phoneNo);
+    List<FriendsInfoDto> getApplicationRecordOfFriend(String invitationCode);
 
     /**
      * 同意/拒绝添加好友申请

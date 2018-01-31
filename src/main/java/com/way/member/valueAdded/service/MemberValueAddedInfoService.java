@@ -11,11 +11,11 @@ public interface MemberValueAddedInfoService {
     /**
      * 根据增值服务类型获取用户增值服务信息
      *
-     * @param phoneNo
+     * @param invitationCode
      * @param type
      * @return
      */
-    MemberValueAddedInfoDto getMemberValueAddedInfoByType(String phoneNo, String type);
+    MemberValueAddedInfoDto getMemberValueAddedInfoByType(String invitationCode, String type);
 
     /**
      * 新增用户增值服务信息

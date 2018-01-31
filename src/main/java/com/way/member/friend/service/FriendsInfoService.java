@@ -17,10 +17,10 @@ public interface FriendsInfoService {
 
     /**
      * 出退出前查看的好友信息
-     * @param phoneNo
+     * @param invitationCode
      * @return
      */
-    List<FriendsInfoDto> getFriendsInfoBeforeExit(String phoneNo);
+    List<FriendsInfoDto> getFriendsInfoBeforeExit(String invitationCode);
 
     /**
      * 根据组ID获取好友信息
@@ -48,25 +48,25 @@ public interface FriendsInfoService {
 
     /**
      * 查询好友信息
-     * @param phoneNo
-     * @param friendPhoneNo
+     * @param invitationCode
+     * @param friendInvitationCode
      * @return
      */
-    ServiceResult<FriendsInfoDto> getFriendInfo(String phoneNo, String friendPhoneNo);
+    ServiceResult<FriendsInfoDto> getFriendInfo(String invitationCode, String friendInvitationCode);
 
     /**
      * 查询好友列表
-     * @param phoneNo
+     * @param invitationCode
      * @return
      */
-    List<FriendsInfoDto> getFriendList(String phoneNo);
+    List<FriendsInfoDto> getFriendList(String invitationCode);
 
     /**
      * 修改好友信息
-     * @param phoneNo
+     * @param invitationCode
      * @param dto
      */
-    void modifyFriendInfo(String phoneNo, FriendsInfoDto dto);
+    void modifyFriendInfo(String invitationCode, FriendsInfoDto dto);
 
     /**
      * 修改被授权人好友信息
@@ -77,10 +77,10 @@ public interface FriendsInfoService {
 
     /**
      * 删除好友
-     * @param phoneNo
-     * @param friendPhoneNo
+     * @param invitationCode
+     * @param friendInvitationCode
      */
-    void deleteFriend(String phoneNo, String friendPhoneNo);
+    void deleteFriend(String invitationCode, String friendInvitationCode);
 
     /**
      * 根据组ID获取好友信息
@@ -91,10 +91,10 @@ public interface FriendsInfoService {
 
     /**
      * 将好友组信息清空
-     * @param phoneNo
+     * @param invitationCode
      * @param groupId
      */
-    void updateFriendsGroupInfo(String phoneNo, String groupId);
+    void updateFriendsGroupInfo(String invitationCode, String groupId);
 
     /**
      * 将好友添加到分组
@@ -127,10 +127,10 @@ public interface FriendsInfoService {
 
     /**
      * 设置好友为退出前可见
-     * @param phoneNo
+     * @param invitationCode
      * @param setInvisibleFriendsList
      * @param setVisibleFriendsList
      */
-    void setFriendsVisibleBeforeExiting(String phoneNo, List<String> setInvisibleFriendsList, List<String> setVisibleFriendsList);
+    void setFriendsVisibleBeforeExiting(String invitationCode, List<String> setInvisibleFriendsList, List<String> setVisibleFriendsList);
 
 }

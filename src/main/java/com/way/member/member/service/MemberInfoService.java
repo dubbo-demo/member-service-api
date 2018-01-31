@@ -45,22 +45,23 @@ public interface MemberInfoService {
 	 * @Description: 修改密码
 	 * @return: void
 	 */
-	public void updatePassword(String phoneNo, String newPassword);
+	public void updatePassword(String invitationCode, String newPassword);
 
 	/**
 	 * 用户注册数据保存
 	 * @param memberDto
 	 * @param invitationCode
+	 * @param nextLevelInvitationCode
 	 * @return
 	 */
-	public void memberRegist(MemberDto memberDto, String invitationCode);
+	public void memberRegist(MemberDto memberDto, String invitationCode, String nextLevelInvitationCode);
 
 	/**
 	 * 根据手机号更新用户头像id
-	 * @param phoneNo
+	 * @param invitationCode
 	 * @param headPicId
 	 */
-	void updateHeadPicIdByPhoneNo(String phoneNo, String headPicId);
+	void updateHeadPicIdByInvitationCode(String invitationCode, String headPicId);
 
 	/**
 	 * 根据手机号搜索用户
@@ -109,11 +110,13 @@ public interface MemberInfoService {
 
 	/**
 	 * 积分转增
-	 * @param phoneNo
+	 * @param invitationCode
 	 * @param rewardScore
+	 * @param friendInvitationCode
+	 * @param phoneNo
 	 * @param friendPhoneNo
 	 */
-	void transferRewardScoreToFriend(String phoneNo, Double rewardScore, String friendPhoneNo);
+	void transferRewardScoreToFriend(String invitationCode, Double rewardScore, String friendInvitationCode, String phoneNo, String friendPhoneNo);
 
 	/**
 	 * 积分提现
@@ -123,18 +126,18 @@ public interface MemberInfoService {
 
 	/**
 	 * 查询总页数
-	 * @param phoneNo
+	 * @param invitationCode
 	 * @return
 	 */
-	Integer getWithdrawalRewardScoreCount(String phoneNo);
+	Integer getWithdrawalRewardScoreCount(String invitationCode);
 
 	/**
 	 * 获取积分提现记录
-	 * @param phoneNo
+	 * @param invitationCode
 	 * @param pageNumber
 	 * @return
 	 */
-	List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String phoneNo, int pageNumber);
+	List<WithdrawalInfoDto> getWithdrawalRewardScoreInfo(String invitationCode, int pageNumber);
 
 	/**
 	 * 充值购买会员/增值服务

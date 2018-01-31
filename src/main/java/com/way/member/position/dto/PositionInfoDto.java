@@ -21,6 +21,8 @@ public class PositionInfoDto implements Serializable {
 
     private String phoneNo;// 手机号
 
+    private String invitationCode;// 邀请码
+
     private String longitude;// 经度
 
     private String latitude;// 纬度

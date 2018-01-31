@@ -13,18 +13,18 @@ public interface RechargeInfoService {
 
     /**
      * 查询总页数
-     * @param phoneNo
+     * @param invitationCode
      * @return
      */
-    Integer getRechargeInfoCount(String phoneNo);
+    Integer getRechargeInfoCount(String invitationCode);
 
     /**
      * 分页查询
-     * @param phoneNo
+     * @param invitationCode
      * @param pageNumber
      * @return
      */
-    List<RechargeInfoDto> getRechargeInfoList(String phoneNo, int pageNumber);
+    List<RechargeInfoDto> getRechargeInfoList(String invitationCode, int pageNumber);
 
     /**
      * 更新充值记录表

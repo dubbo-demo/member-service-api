@@ -80,4 +80,11 @@ public class FriendsInfoDto extends BaseEntity {
 
     /** 是否同意，0：申请中、1：是、2：否 */
     private String isApprove;
+
+    /** 邀请码 */
+    private String invitationCode;
+
+    /** 好友邀请码 */
+    private String friendInvitationCode;
+
 }

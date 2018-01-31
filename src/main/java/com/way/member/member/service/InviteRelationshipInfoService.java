@@ -1,5 +1,8 @@
 package com.way.member.member.service;
 
+import com.way.common.result.ServiceResult;
+import com.way.member.member.dto.InviteRelationshipInfoDto;
+
 /**
  * @ClassName: InviteRelationshipInfoService
  * @Description: 邀请码关系信息Service
@@ -7,4 +10,17 @@ package com.way.member.member.service;
  *
  */
 public interface InviteRelationshipInfoService {
+
+    /**
+     * 根据邀请码查出邀请人上级用户邀请码
+     * @param invitationCode
+     * @return
+     */
+    ServiceResult<InviteRelationshipInfoDto> queryInviteRelationshipInfoByUnderNextLevelInvitationCode(String invitationCode);
+
+    /**
+     * 保存推荐人层级关系
+     * @param inviteRelationshipInfoDto
+     */
+    void addInviteRelationshipInfo(InviteRelationshipInfoDto inviteRelationshipInfoDto);
 }

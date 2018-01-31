@@ -16,11 +16,11 @@ public interface GroupInfoService {
 
     /**
      * 新建组
-     * @param phoneNo
+     * @param invitationCode
      * @param groupName
      * @return
      */
-    ServiceResult<Object> addGroupInfo(String phoneNo, String groupName);
+    ServiceResult<Object> addGroupInfo(String invitationCode, String groupName);
 
     /**
      * 查出组信息
@@ -43,8 +43,8 @@ public interface GroupInfoService {
 
     /**
      * 查询组信息
-     * @param phoneNo
+     * @param invitationCode
      * @return
      */
-    List<GroupInfoDto> getGroupInfoListByPhoneNo(String phoneNo);
+    List<GroupInfoDto> getGroupInfoListByInvitationCode(String invitationCode);
 }

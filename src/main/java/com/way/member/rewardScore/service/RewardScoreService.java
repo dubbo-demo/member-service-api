@@ -20,16 +20,16 @@ public interface RewardScoreService {
 
     /**
      * 查询总页数
-     * @param phoneNo
+     * @param invitationCode
      * @return
      */
-    Integer getRewardScoreDetailCount(String phoneNo);
+    Integer getRewardScoreDetailCount(String invitationCode);
 
     /**
      * 分页查询
-     * @param phoneNo
+     * @param invitationCode
      * @param pageNumber
      * @return
      */
-    List<RewardScoreDto> getRewardScoreDetailList(String phoneNo, Integer pageNumber);
+    List<RewardScoreDto> getRewardScoreDetailList(String invitationCode, Integer pageNumber);
 }
