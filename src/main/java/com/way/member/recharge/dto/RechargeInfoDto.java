@@ -12,7 +12,7 @@ public class RechargeInfoDto extends BaseEntity {
 
     private static final long serialVersionUID = -1199323993803169292L;
 
-    private String phoneNo;// 手机号
+    private String invitationCode;// 邀请码
 
     private String type;// 增值服务类型:0:购买会员,1:轨迹回放,2:电子围栏
 
