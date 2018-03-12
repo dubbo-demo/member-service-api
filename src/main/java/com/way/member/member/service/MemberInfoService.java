@@ -72,10 +72,10 @@ public interface MemberInfoService {
 
 	/**
 	 * 查看个人信息
-	 * @param phoneNo
+	 * @param invitationCode
 	 * @return
 	 */
-	ServiceResult<MemberDto> getMemberInfo(String phoneNo);
+	ServiceResult<MemberDto> getMemberInfo(String invitationCode);
 
 	/**
 	 * 修改个人信息

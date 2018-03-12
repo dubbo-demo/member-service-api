@@ -31,11 +31,11 @@ public interface ApplyFriendInfoService {
 
     /**
      * 同意/拒绝添加好友申请
-     * @param phoneNo
-     * @param friendPhoneNo
+     * @param invitationCode
+     * @param friendInvitationCode
      * @param isApprove
      * @param applicationId
      * @return
      */
-    ServiceResult<Object> agreeToAddFriend(String phoneNo, String friendPhoneNo, String isApprove, String applicationId);
+    ServiceResult<Object> agreeToAddFriend(String invitationCode, String friendInvitationCode, String isApprove, String applicationId);
 }

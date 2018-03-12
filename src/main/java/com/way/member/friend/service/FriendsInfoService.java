@@ -32,19 +32,19 @@ public interface FriendsInfoService {
 
     /**
      * 更新好友是否退出前查看状态
-     * @param phoneNo
+     * @param invitationCode
      * @param groupId
      * @param state
      */
-    void updateIsCheckBeforeExitByGroupId(String phoneNo, String groupId, Integer state);
+    void updateIsCheckBeforeExitByGroupId(String invitationCode, String groupId, Integer state);
 
     /**
      * 取消查看好友实时坐标
-     * @param phoneNo
-     * @param friendPhoneNoList
+     * @param invitationCode
+     * @param friendInvitationCodes
      * @param state
      */
-    void updateIsCheckBeforeExitByFriendPhoneNos(String phoneNo, List<String> friendPhoneNoList, Integer state);
+    void updateIsCheckBeforeExitByFriendPhoneNos(String invitationCode, List<String> friendInvitationCodes, Integer state);
 
     /**
      * 查询好友信息
@@ -98,18 +98,18 @@ public interface FriendsInfoService {
 
     /**
      * 将好友添加到分组
-     * @param friendPhoneNos
+     * @param friendInvitationCodes
      * @param groupInfoDto
      */
-    void moveFriendToGroup(String friendPhoneNos, GroupInfoDto groupInfoDto);
+    void moveFriendToGroup(String friendInvitationCodes, GroupInfoDto groupInfoDto);
 
     /**
      * 将好友从分组中移除
-     * @param phoneNo
-     * @param friendPhoneNo
+     * @param invitationCode
+     * @param friendInvitationCodes
      * @return
      */
-    ServiceResult<Object> removeFriendFromGroup(String phoneNo, String friendPhoneNo);
+    ServiceResult<Object> removeFriendFromGroup(String invitationCode, String friendInvitationCodes);
 
     /**
      * 添加好友
@@ -119,11 +119,11 @@ public interface FriendsInfoService {
 
     /**
      * 查询是否被好友授权可见
-     * @param phoneNo
-     * @param friendPhoneNo
+     * @param invitationCode
+     * @param friendInvitationCode
      * @return
      */
-    FriendsInfoDto checkIsAuthorizedVisible(String phoneNo, String friendPhoneNo);
+    FriendsInfoDto checkIsAuthorizedVisible(String invitationCode, String friendInvitationCode);
 
     /**
      * 设置好友为退出前可见

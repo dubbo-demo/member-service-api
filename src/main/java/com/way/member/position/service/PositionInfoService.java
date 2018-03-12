@@ -30,18 +30,18 @@ public interface PositionInfoService {
     /**
      * 根据手机号获取用户实时坐标
      *
-     * @param phoneNo
+     * @param invitationCode
      * @param modifyTime
      * @return
      */
-    ServiceResult<PositionInfoDto> getRealTimePositionByPhoneNo(String phoneNo, String modifyTime);
+    ServiceResult<PositionInfoDto> getRealTimePositionByPhoneNo(String invitationCode, String modifyTime);
 
     /**
      * 查询用户历史轨迹坐标
-     * @param phoneNo
+     * @param invitationCode
      * @param startTime
      * @param endTime
      * @return
      */
-    List<PositionInfoDto> getMemberHistoryPositions(String phoneNo, String startTime, String endTime);
+    List<PositionInfoDto> getMemberHistoryPositions(String invitationCode, String startTime, String endTime);
 }
